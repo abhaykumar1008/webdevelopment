@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+<body>
+    <form action=""><!--when we create a form to use the form tag-->
+        <h1>Payment Form</h1>
+        <h2>Contact Information</h2>
+        <p>Name:- <input type=" text" name="name " required></p>
+        <!--to input the value to use the input tag and here name is the input who give the information the sever and required is used infoematin is mandatory-->
+        <fieldset><!--this is box around this-->
+            <legend>Gender</legend><!--this is type of heading -->
+            <p>
+                Male <input type="radio" name="gender" id="male">
+                <!--here radio is the option to choose here name is also jaruri to define because without using name attribute radio button is not working proprly-->
+                female <input type="radio" name="gender" id="female">
+            </p>
+        </fieldset>
+        <p>
+            Address:<textarea name="address" id="address" cols="50" rows="8" required></textarea>
+            <!--textarea is used to write some more words like address-->
+        </p>
+        <p>Email:<input type="Email" name="eamil" id="email"></p>
+        <p>Pincode: <input type="number" name="pincode" id="pincode"></p>
+        <h2>Payment Information</h2>
+        <p>Card type:
+            <select name="card_type" id="card_type" ><!--this is select tag -->
+                <option value="">--select a card type--</option><!--this is a option tag-->
+                <option value="visa">Visa</option>
+                <option value="rupay">Rupay</option>
+                <option value="mastercard">Mastercard</option>
+                
+
+            </select>
+        </p>
+        <p>
+            Card Number: <input type="Number" name="card_number" id="card_number" required>
+        </p>
+        <p>
+            Expiration Date: <input type="date" name="exp_date" id="exp_date" required>
+        </p>
+        <p>
+            CVV: <input type="password" name="cvv" id="cvv" required >
+        </p>
+        <input type="submit" value="Paynow">
+        
+
+       
+
+
+    </form>
+    
+</body>
+</html>

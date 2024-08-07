@@ -1,0 +1,15 @@
+h3{
+    color:blue;
+}/*in css this bracket is  {}  is use and perform all instruction the this parathensise*/
+table,tr,th,td{
+    border:solid black;/*draw a line around the line in the table*/
+    border-collapse: collapse;/*for removing the double line */
+    padding:10px;/*for particuler spacing this pladding is used */
+    
+}
+th{
+    background-color: aqua;/*background colour*/
+}
+td{
+    background-color: bisque;
+}

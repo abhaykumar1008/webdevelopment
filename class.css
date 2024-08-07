@@ -1,0 +1,18 @@
+.special{
+    color: orange
+}/*here special connect to the html in li or span*/
+span.special,li.special{
+    color:purple
+    
+}/*this is use for the particulaer class*/
+h1+p{
+    font-size: 200%;
+}/*ye asss pass ke tag ke liye use hota hai*/
+a:hover{
+    color:saddlebrown;
+    text-decoration-line: none;
+}/*this tag is usesd to color or underline the link which you are given to you*/
+*{
+    color:blue;
+    background-color: red;
+}
