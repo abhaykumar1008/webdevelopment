@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Maximum</title>
+    <script>
+        function findMaximum() {
+            // Get the values of the input fields
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var num3 = parseFloat(document.getElementById("num3").value);
+
+            // Validate the inputs to ensure they are numbers
+            if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
+                document.getElementById("result").textContent = "Please enter valid numbers in all fields.";
+                return false;
+            }
+
+            // Find the maximum of the three numbers
+            var max = Math.max(num1, num2, num3);
+
+            // Display the result
+            document.getElementById("result").textContent = "The maximum number is: " + max;
+            
+            // Prevent form submission
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <h2>Find the Maximum of Three Numbers</h2>
+    <form onsubmit="return findMaximum()">
+        <label for="num1">Number 1:</label>
+        <input type="number" id="num1" name="num1" required>
+        <br>
+        <label for="num2">Number 2:</label>
+        <input type="number" id="num2" name="num2" required>
+        <br>
+        <label for="num3">Number 3:</label>
+        <input type="number" id="num3" name="num3" required>
+        <br><br>
+        <button type="submit">Find Maximum</button>
+    </form>
+    <p id="result"></p>
+</body>
+</html>
